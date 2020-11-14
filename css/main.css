@@ -1,14 +1,25 @@
-/*@import "./utils/variables";
-@import "./utils/functions";
-@import "./utils/mixins";
-@import "./utils/extensions";
-@import "./base/base";
-@import "./base/typography";
-@import "./components/buttons";
-@import "./layouts/header";
-@import "./layouts/nav";
-@import "./layouts/container";
-@import "./layouts/form";
-@import "./pages/work";
-@import "./pages/about";
-@import "./pages/project";*/
+body {
+  margin: auto;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+header .header__logo {
+  width: 60%;
+}
+
+/* Search Bar */
+.search {
+  background-color: #eaeaea;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.search input {
+  border: none;
+  background-color: inherit;
+}
