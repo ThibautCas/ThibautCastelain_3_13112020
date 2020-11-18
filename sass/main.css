@@ -1,0 +1,47 @@
+/* Colors */
+/*@import "./utils/mixins";*/
+body {
+  margin: auto;
+}
+
+/* Header */
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px;
+}
+
+header .header__logo {
+  width: 60%;
+}
+
+/* Search Bar */
+.search {
+  background-color: #eaeaea;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.search input {
+  border: none;
+  background-color: inherit;
+}
+
+/*@import "./components/buttons";
+@import "./layouts/header";
+@import "./layouts/nav";
+@import "./layouts/container";
+@import "./layouts/form";
+@import "./pages/work";
+@import "./pages/about";
+@import "./pages/project";*/
+/*# sourceMappingURL=main.css.map */
