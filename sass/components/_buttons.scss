@@ -1,0 +1,42 @@
+/* button Title */
+
+.button-explore {
+    font-size: $button-font;
+    color: white;
+    background: linear-gradient(to bottom right, $secondary-color, $primary-color);
+    padding: 15px;
+    border-radius: 30px;
+    border: 0;
+    box-shadow: $button-shadow;
+}
+
+/* button Explanation */
+
+.steps {
+    margin: 15px;
+    background-color: $background-color;
+    border-radius: 20px;
+    font-size: $button-font;
+    padding: 30px 10px;
+    box-shadow: $button-shadow;
+    .number {
+        color: white;
+        background-color: $primary-color;
+        border-radius: 100px;
+        padding: 5px 10px;
+        left: -20px;
+        position: relative;
+}
+    .fas {
+        margin-right: 20px;
+    }
+
+}
+
+/* Results */
+
+.new {
+    background-color: $tertiary-color;
+    color: $new-color;
+    
+}
