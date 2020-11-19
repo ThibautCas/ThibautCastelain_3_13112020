@@ -1,10 +1,18 @@
 /* Colors */
 /* Buttons */
 /* Margins */
-/*@import "./utils/mixins";*/
+/* small screens */
+/* medium screens */
+/* large screens */
+/* extra large screens */
+/* Small screens */
+/* Medium screens */
+/* Large screens */
+/* extra large screens */
 body {
   margin: auto;
   font-family: roboto;
+  max-width: 1220px;
 }
 
 /* Header */
@@ -72,18 +80,60 @@ header .header__logo {
 /* Results */
 .results {
   margin: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .results a {
-  margin: 2%;
   width: 96%;
 }
 
 .results a img {
   -o-object-fit: cover;
   object-fit: cover;
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+@media (min-width: 300px) and (max-width: 500px) {
+  .results a img {
+    height: 150px;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 800px) {
+  .results a img {
+    height: 350px;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1220px) {
+  .results a img {
+    height: 500px;
+  }
+}
+
+.results a h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 15px 10px 0;
+}
+
+.results a p {
+  font-size: 1rem;
+  margin: 10px;
+}
+
+.results a .far {
+  position: relative;
+  font-size: 2rem;
+  top: -50px;
+  float: right;
+  margin-right: 40px;
 }
 
 /* button Title */
@@ -127,6 +177,73 @@ header .header__logo {
 .new {
   background-color: #99E2D0;
   color: #419F86;
+  padding: 5px 10px;
+  float: right;
+  margin-right: 30px;
+  margin-top: 20px;
+  position: relative;
+}
+
+@media (min-width: 300px) and (max-width: 500px) {
+  .new {
+    top: -150px;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 800px) {
+  .new {
+    top: -350px;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1220px) {
+  .new {
+    top: -500px;
+  }
+}
+
+/* Cards */
+.card {
+  color: black;
+  text-decoration: none;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.2);
+  margin: 20px 0;
+}
+
+footer {
+  background-color: #353535;
+  margin-top: 30px;
+  padding: 1rem;
+  color: white;
+  line-height: 1.5rem;
+}
+
+footer h5 {
+  font-family: Shrikhand;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+footer .fas {
+  padding-right: 10px;
+  width: 1rem;
+}
+
+footer .footer__end {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .footer__end a {
+  color: white;
+  text-decoration: none;
 }
 
 /*@import "./layouts/header";

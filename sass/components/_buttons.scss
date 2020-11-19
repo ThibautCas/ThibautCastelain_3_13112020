@@ -38,5 +38,29 @@
 .new {
     background-color: $tertiary-color;
     color: $new-color;
+    padding: 5px 10px;
+    float: right;
+    margin-right: 30px;
+    margin-top: 20px;
+    position: relative;
+    @include sm {
+        top: -150px;
+      }
+      @include md {
+        top: -350px;
+      }
+      @include lg {
+        top: -500px;
+      }
+}
+
+/* Cards */
+
+.card {
+    color: black;
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: $button-shadow;
+    margin: 20px 0;
     
 }
