@@ -10,28 +10,6 @@
 /* Large screens */
 /* extra large screens */
 /* Transitions */
-@-webkit-keyframes slidein {
-  from {
-    -webkit-transform: scaleY(0);
-            transform: scaleY(0);
-  }
-  to {
-    -webkit-transform: scaleY(1);
-            transform: scaleY(1);
-  }
-}
-
-@keyframes slidein {
-  from {
-    -webkit-transform: scaleY(0);
-            transform: scaleY(0);
-  }
-  to {
-    -webkit-transform: scaleY(1);
-            transform: scaleY(1);
-  }
-}
-
 body {
   margin: auto;
   font-family: roboto;
@@ -158,17 +136,33 @@ header .header__logo {
   margin: 10px;
 }
 
-.results a .far {
+.results a .far,
+.results a .fas {
   position: relative;
   font-size: 2rem;
   top: -50px;
   float: right;
   margin-right: 40px;
+  -webkit-transition: opacity 0.4s;
+  transition: opacity 0.4s;
 }
 
-.results a .far:active {
-  -webkit-animation: 1s slidein;
-  animation: 1s slidein;
+.results a .far {
+  right: -72px;
+}
+
+.results a .fas {
+  z-index: 5;
+  opacity: 0;
+  color: red;
+}
+
+.results a .far:hover {
+  opacity: 0;
+}
+
+.results a .fas:hover {
+  opacity: 1;
 }
 
 /* button Title */

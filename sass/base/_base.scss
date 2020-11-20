@@ -96,16 +96,30 @@ header {
       font-size: 1rem;
       margin: 10px;
     }
-    .far {
+    .far,
+    .fas {
       position: relative;
       font-size: 2rem;
       top: -50px;
       float: right;
       margin-right: 40px;
-      &:active {
-        -webkit-animation: 1s slidein;
-        animation: 1s slidein;
-      }
+      transition: opacity 0.4s;
     }
+    .far{
+      right: -72px;
+    }
+    .fas {
+      z-index: 5;
+      opacity: 0;
+      color: red;
+    }
+    .far:hover {
+      opacity: 0;
+    }
+    .fas:hover {
+      opacity: 1;
+    }
+
+    
   }
 }
