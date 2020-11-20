@@ -103,7 +103,7 @@ header {
       top: -50px;
       float: right;
       margin-right: 40px;
-      transition: opacity 0.4s;
+      transition: opacity 0.5s;
     }
     .far{
       right: -72px;
@@ -111,7 +111,10 @@ header {
     .fas {
       z-index: 5;
       opacity: 0;
-      color: red;
+      background: linear-gradient($secondary-color, $primary-color);
+      color: transparent;
+      -webkit-background-clip: text;
+              background-clip: text;
     }
     .far:hover {
       opacity: 0;

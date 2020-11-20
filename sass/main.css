@@ -143,8 +143,8 @@ header .header__logo {
   top: -50px;
   float: right;
   margin-right: 40px;
-  -webkit-transition: opacity 0.4s;
-  transition: opacity 0.4s;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
 }
 
 .results a .far {
@@ -154,7 +154,11 @@ header .header__logo {
 .results a .fas {
   z-index: 5;
   opacity: 0;
-  color: red;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 
 .results a .far:hover {
