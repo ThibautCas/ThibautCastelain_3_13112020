@@ -103,7 +103,7 @@ header {
       top: -50px;
       float: right;
       margin-right: 40px;
-      transition: opacity 0.5s;
+      transition: all 0.5s;
     }
     .far{
       right: -72px;
@@ -121,6 +121,7 @@ header {
     }
     .fas:hover {
       opacity: 1;
+      transform: scale(1.1);
     }
 
     
