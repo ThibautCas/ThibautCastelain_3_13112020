@@ -1,14 +1,32 @@
+.pre-loader {
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  -webkit-animation: affich-loading 3s forwards;
+  animation: affich-loading 3s forwards;
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+}
+
 .spinner {
     height: 2000px;
       z-index: 100;
       background-color: white;
 }
+.spinner-msg {
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 20vh;
+  img {
+    margin: auto;
+    width: 60%;
+  }
+}
 .spinner-bars {
-  position: absolute;
+  margin: auto;
   width: 35px;
   height: 35px;
-  left: 50%;
-  top: 50%;
+
   div {
     position: absolute;
     width: 4px;
@@ -112,6 +130,26 @@
     opacity: 1;
   }
   100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes affich-loading {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes affich-loading {
+  from {
+    opacity: 1;
+  }
+
+  to {
     opacity: 0;
   }
 }
