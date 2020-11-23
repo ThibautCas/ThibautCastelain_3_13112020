@@ -1,24 +1,17 @@
 body {
   margin: auto;
   font-family: roboto;
-  max-width: 1220px;
+  max-width: 1200px;
 }
 .page-content {
-  -webkit-animation: affich 5s forwards;
-          animation: affich 5s forwards;
+  -webkit-animation: affich 4s forwards;
+          animation: affich 4s forwards;
   width: 100%;
 }
 
 /* Header */
 
-header {
-  display: flex;
-  justify-content: center;
-  margin: 20px;
-  .header__logo {
-    width: 60%;
-  }
-}
+
 
 /* Search Bar */
 

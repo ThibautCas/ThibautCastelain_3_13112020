@@ -4,10 +4,10 @@
   position: fixed;
   width: 100%;
   background-color: white;
-  -webkit-animation: affich-loading 3s forwards;
-  animation: affich-loading 3s forwards;
-  -webkit-animation-delay: 3s;
-  animation-delay: 3s;
+  -webkit-animation: affich-loading 4s forwards;
+  animation: affich-loading 4s forwards;
+  max-width: 1200px;
+
 }
 
 .spinner {
@@ -18,10 +18,16 @@
 .spinner-msg {
   text-align: center;
   font-size: 1rem;
-  margin-bottom: 20vh;
+  margin: 0px 20px 20vh 20px;
   img {
     margin: auto;
     width: 60%;
+  }
+  p {
+    background: linear-gradient(to right, #9356DC, #FF79DA);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
   }
 }
 .spinner-bars {
@@ -137,21 +143,26 @@
 }
 
 @-webkit-keyframes affich-loading {
-  from {
+  0% {
     opacity: 1;
   }
-
-  to {
+  80% {
+    opacity: 0.8;
+  }
+  100%{
     opacity: 0;
   }
 }
 
 @keyframes affich-loading {
-  from {
+  0% {
     opacity: 1;
   }
-
-  to {
+  80% {
+    opacity: 0.8;
+  }
+  
+  100% {
     opacity: 0;
   }
 }
