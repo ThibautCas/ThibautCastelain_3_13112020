@@ -17,7 +17,8 @@
 /* button Explanation */
 
 .steps {
-    margin: 15px;
+    margin: 20px auto;
+    max-width: 500px;
     background-color: $background-color;
     border-radius: 20px;
     font-size: $button-font;
@@ -61,7 +62,7 @@
         top: -350px;
       }
       @include lg {
-        top: -500px;
+        top: -250px;
       }
 }
 
@@ -73,5 +74,7 @@
     border-radius: 10px;
     box-shadow: $button-shadow;
     margin: 20px 0;
-    
+    &:hover {
+        box-shadow: $button-shadow-hover;
+    }
 }

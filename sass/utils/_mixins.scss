@@ -17,7 +17,7 @@
 /* Large screens */
 
 @mixin lg {
-  @media (min-width: #{$screen-lg-min}) and (max-width: #{$screen-xl-min}) {
+  @media (min-width: #{$screen-lg-min}) {
     @content;
   }
 }

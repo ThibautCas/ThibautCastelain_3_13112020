@@ -1,3 +1,5 @@
+/* Animation Loading Spinner */
+
 .pre-loader {
   position: fixed;
   width: 100%;
@@ -9,9 +11,9 @@
 }
 
 .spinner {
-    height: 2000px;
-      z-index: 100;
-      background-color: white;
+  height: 2000px;
+  z-index: 100;
+  background-color: white;
 }
 .spinner-msg {
   text-align: center;
@@ -153,3 +155,38 @@
     opacity: 0;
   }
 }
+
+/* Bringing page itself */
+
+@-webkit-keyframes affich 
+{
+  0% 
+  {
+    opacity: 0;
+  }
+  90% 
+  {
+    opacity: 0;
+  }
+  100% 
+  {
+    opacity: 1;
+  }
+}
+
+@keyframes affich 
+{
+  0% 
+  {
+    opacity: 0;
+  }
+  90% 
+  {
+    opacity: 0;
+  }
+  100% 
+  {
+    opacity: 1;
+  }
+}
+

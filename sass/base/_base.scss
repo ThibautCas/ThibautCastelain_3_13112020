@@ -3,6 +3,11 @@ body {
   font-family: roboto;
   max-width: 1220px;
 }
+.page-content {
+  -webkit-animation: affich 5s forwards;
+          animation: affich 5s forwards;
+  width: 100%;
+}
 
 /* Header */
 
@@ -65,11 +70,18 @@ header {
 /* Results */
 
 .results {
-  margin: $margin-container;
+    margin: $margin-container;
+
+}
+.container-card {
   display: flex;
   flex-wrap: wrap;
   a {
     width: 96%;
+    @include lg {
+      width: 40%;
+      margin: 5%;
+    }
     img {
       -o-object-fit: cover;
       object-fit: cover;
@@ -84,7 +96,7 @@ header {
         height: 350px;
       }
       @include lg {
-        height: 500px;
+        height: 250px;
       }
     }
     h4 {
