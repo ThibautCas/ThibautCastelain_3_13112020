@@ -433,6 +433,12 @@ body {
           box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.2);
 }
 
+@media (min-width: 300px) and (max-width: 500px) {
+  .steps {
+    font-size: 1rem;
+  }
+}
+
 .steps .number {
   color: white;
   background-color: #9356DC;
@@ -557,17 +563,27 @@ header .header__logo {
 
 header .return-home {
   position: absolute;
-  left: 30px;
-  top: 15px;
+  left: 8%;
   color: black;
-  font-size: 2rem;
+  font-size: 8vw;
+}
+
+@media (min-width: 1220px) {
+  header .return-home {
+    font-size: 6rem;
+  }
+}
+
+.restau img {
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 /*@import "./layouts/header";
 @import "./layouts/nav";
 @import "./layouts/container";
 @import "./layouts/form";
-@import "./pages/work";
 @import "./pages/about";
 @import "./pages/project";*/
 /*# sourceMappingURL=main.css.map */
