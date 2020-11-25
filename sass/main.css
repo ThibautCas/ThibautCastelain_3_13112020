@@ -52,8 +52,9 @@
 
 .spinner-bars div {
   position: absolute;
-  width: 4px;
+  width: 6px;
   height: 30px;
+  border-radius: 30px;
   background-color: #9356dc;
   opacity: 0.05;
   -webkit-animation: fadeit 0.8s linear 10;
@@ -274,6 +275,7 @@ body {
 
 .search input {
   border: none;
+  width: 130px;
   background-color: inherit;
   font-size: 1rem;
 }
@@ -507,6 +509,27 @@ body {
           box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.4);
 }
 
+/* Menu Button Course */
+.course {
+  background-color: white;
+  border-radius: 10px;
+  position: relative;
+  width: 90%;
+  margin: 10px auto;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.2);
+}
+
+.course:hover {
+  -webkit-box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.4);
+}
+
+.course h3 {
+  padding: 3%;
+}
+
 footer {
   background-color: #353535;
   margin-top: 30px;
@@ -578,6 +601,129 @@ header .return-home {
   width: 100%;
   -o-object-fit: cover;
   object-fit: cover;
+}
+
+.restau .restau-text {
+  background-color: #f6f6f6;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  position: relative;
+  top: -60px;
+}
+
+.restau .restau-text h1 {
+  font-family: "Shrikhand", serif;
+  font-size: 1.4rem;
+  padding: 20px;
+  position: relative;
+}
+
+@media (min-width: 500px) and (max-width: 800px) {
+  .restau .restau-text h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 800px) {
+  .restau .restau-text h1 {
+    font-size: 3rem;
+  }
+}
+
+.restau .restau-text .far,
+.restau .restau-text .fas {
+  position: relative;
+  font-size: 2rem;
+  top: -70px;
+  float: right;
+  margin-right: 40px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+@media (min-width: 800px) {
+  .restau .restau-text .far,
+  .restau .restau-text .fas {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 800px) {
+  .restau .restau-text .far,
+  .restau .restau-text .fas {
+    top: -85px;
+  }
+}
+
+@media (min-width: 800px) {
+  .restau .restau-text .far,
+  .restau .restau-text .fas {
+    top: -110px;
+  }
+}
+
+.restau .restau-text .far {
+  right: -72px;
+}
+
+@media (min-width: 800px) {
+  .restau .restau-text .far {
+    right: -88px;
+  }
+}
+
+.restau .restau-text .fas {
+  z-index: 5;
+  opacity: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.restau .restau-text .far:hover {
+  opacity: 0;
+}
+
+.restau .restau-text .fas:hover {
+  opacity: 1;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.restau .restau-text .restau__menu {
+  margin: 3%;
+}
+
+.restau .restau-text .restau__menu .restau__starter h2 {
+  text-transform: uppercase;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+@media (min-width: 300px) and (max-width: 500px) {
+  .restau .restau-text .restau__menu .restau__starter h2 {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 800px) {
+  .restau .restau-text .restau__menu .restau__starter h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1220px) {
+  .restau .restau-text .restau__menu .restau__starter h2 {
+    font-size: 2.5rem;
+  }
+}
+
+.restau .restau-text .restau__menu .restau__starter .underline {
+  width: 10%;
+  border-bottom: solid #99e2d0;
 }
 
 /*@import "./layouts/header";

@@ -81,3 +81,21 @@
         box-shadow: $button-shadow-hover;
     }
 }
+
+/* Menu Button Course */ 
+
+.course {
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    width: 90%;
+    margin: 10px auto;
+    cursor: pointer;
+    box-shadow: $button-shadow;
+    &:hover {
+        box-shadow: $button-shadow-hover;
+    }
+    h3 {
+        padding: 3%;
+    }
+  }
