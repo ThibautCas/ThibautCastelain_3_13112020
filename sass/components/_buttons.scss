@@ -1,101 +1,126 @@
 /* button Title */
 
 .button-explore {
-    font-size: $button-font;
-    color: white;
-    background: linear-gradient(to bottom right, $secondary-color, $primary-color);
-    padding: 15px;
-    border-radius: 30px;
-    border: 0;
-    box-shadow: $button-shadow;
-    &:hover {
-        opacity: $opacity-hover;
-        box-shadow: $button-shadow-hover;
-    }
+  font-size: $button-font;
+  color: white;
+  background: linear-gradient(
+    to bottom right,
+    $secondary-color,
+    $primary-color
+  );
+  padding: 15px;
+  border-radius: 30px;
+  border: 0;
+  box-shadow: $button-shadow;
+  &:hover {
+    opacity: $opacity-hover;
+    box-shadow: $button-shadow-hover;
+  }
 }
 
 /* button Explanation */
 
 .steps {
-    margin: 20px auto;
-    max-width: 500px;
-    background-color: $background-color;
-    border-radius: 20px;
-    font-size: $button-font;
-    @include sm {
-        font-size: $button-font-small;
-    }
-    padding: 30px 10px;
-    box-shadow: $button-shadow;
-    .number {
-        color: white;
-        background-color: $primary-color;
-        border-radius: 100px;
-        padding: 5px 10px;
-        left: -20px;
-        position: relative;
-}
+  margin: 20px auto;
+  max-width: 500px;
+  background-color: $background-color;
+  border-radius: 20px;
+  font-size: $button-font;
+  @include sm {
+    font-size: $button-font-small;
+  }
+  padding: 30px 10px;
+  box-shadow: $button-shadow;
+  .number {
+    color: white;
+    background-color: $primary-color;
+    border-radius: 100px;
+    padding: 5px 10px;
+    left: -20px;
+    position: relative;
+  }
+  .fas {
+    margin-right: 20px;
+  }
+  &:hover {
+    background-color: lighten($primary-color, 30);
+    box-shadow: $button-shadow-hover;
     .fas {
-        margin-right: 20px;
+      color: $primary-color;
     }
-    &:hover {
-        background-color: lighten($primary-color, 30);
-        box-shadow: $button-shadow-hover;
-        .fas {
-            color: $primary-color;
-        }
-    }
+  }
 }
 
 /* Results */
 
 .new {
-    background-color: $tertiary-color;
-    color: $new-color;
-    padding: 5px 10px;
-    float: right;
-    margin-right: 30px;
-    margin-top: 20px;
-    position: relative;
-    top: -600px;
-    @include sm {
-        top: -150px;
-      }
-      @include md {
-        top: -350px;
-      }
-      @include lg {
-        top: -250px;
-      }
+  background-color: $tertiary-color;
+  color: $new-color;
+  padding: 5px 10px;
+  float: right;
+  margin-right: 30px;
+  margin-top: 20px;
+  position: relative;
+  top: -600px;
+  @include sm {
+    top: -150px;
+  }
+  @include md {
+    top: -350px;
+  }
+  @include lg {
+    top: -250px;
+  }
 }
 
 /* Cards */
 
 .card {
-    color: black;
-    text-decoration: none;
-    border-radius: 10px;
-    box-shadow: $button-shadow;
-    margin: 20px 0;
-    &:hover {
-        box-shadow: $button-shadow-hover;
-    }
+  color: black;
+  text-decoration: none;
+  border-radius: 10px;
+  box-shadow: $button-shadow;
+  margin: 20px 0;
+  &:hover {
+    box-shadow: $button-shadow-hover;
+  }
 }
 
-/* Menu Button Course */ 
+/* Menu Button Course */
+.menu-anim{
+    display: flex;
 
 .course {
-    background-color: white;
-    border-radius: 10px;
-    position: relative;
-    width: 90%;
-    margin: 10px auto;
-    cursor: pointer;
-    box-shadow: $button-shadow;
-    &:hover {
-        box-shadow: $button-shadow-hover;
-    }
+  background-color: white;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 90%;
+  margin: 10px auto;
+  cursor: pointer;
+  box-shadow: $button-shadow;
+  &:hover {
+    box-shadow: $button-shadow-hover;
+  }
+  .course-text {
+    flex-direction: row;
+    margin: 2%;
     h3 {
-        padding: 3%;
+      padding: 1%;
+      margin: 0;
+      display: contents;
+    }
+    p {
+      padding: 1%;
+      margin: 0;
     }
   }
+  .price {
+    font-size: 1.2rem;
+    margin: 2%;
+  }
+}
+}

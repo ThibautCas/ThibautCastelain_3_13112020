@@ -63,7 +63,7 @@
     }
     .restau__menu {
       margin: 3%;
-      .restau__starter {
+      .restau__courses {
         h2 {
           text-transform: uppercase;
           font-family: "Roboto";
@@ -87,4 +87,10 @@
       }
     }
   }
+}
+
+.order {
+  text-align: center;
+    top: -40px;
+    position: relative;
 }

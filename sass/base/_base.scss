@@ -2,16 +2,13 @@ body {
   margin: auto;
   font-family: roboto;
   max-width: 1200px;
+  background-color: $background-color;
 }
 .page-content {
   -webkit-animation: affich 4s forwards;
           animation: affich 4s forwards;
   width: 100%;
 }
-
-/* Header */
-
-
 
 /* Search Bar */
 
