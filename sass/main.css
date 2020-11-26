@@ -240,6 +240,44 @@
   }
 }
 
+/* Animation Menus */
+/* Menus coming-up at loading */
+@-webkit-keyframes landing {
+  0% {
+    top: -1000px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+@keyframes landing {
+  0% {
+    top: 1000px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+.course-1 {
+  position: relative;
+  -webkit-animation: landing 1s ease-out 1s both;
+  animation: landing 1s ease-out 1s both;
+}
+
+.course-2 {
+  position: relative;
+  -webkit-animation: landing 1s ease-out 2s both;
+  animation: landing 1s ease-out 2s both;
+}
+
+.course-3 {
+  position: relative;
+  -webkit-animation: landing 1s ease-out 3s both;
+  animation: landing 1s ease-out 3s both;
+}
+
 body {
   margin: auto;
   font-family: roboto;
@@ -696,6 +734,7 @@ header .return-home {
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
   position: relative;
+  overflow: hidden;
   top: -60px;
 }
 
