@@ -244,7 +244,6 @@ body {
   margin: auto;
   font-family: roboto;
   max-width: 1200px;
-  background-color: #f6f6f6;
 }
 
 .page-content {
@@ -405,7 +404,7 @@ body {
 }
 
 /* button Title */
-.button-explore {
+.button {
   font-size: 1.2rem;
   color: white;
   background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
@@ -417,10 +416,14 @@ body {
           box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.2);
 }
 
-.button-explore:hover {
+.button:hover {
   opacity: 0.8;
   -webkit-box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.4);
           box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.4);
+}
+
+.button__menus {
+  padding: 15px 50px;
 }
 
 /* button Explanation */
@@ -556,12 +559,17 @@ body {
 .menu-anim .course .course-text h3 {
   padding: 1%;
   margin: 0;
-  display: contents;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 
 .menu-anim .course .course-text p {
   padding: 1%;
   margin: 0;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 
 .menu-anim .course .price {
@@ -635,6 +643,10 @@ header .return-home {
   header .return-home {
     font-size: 6rem;
   }
+}
+
+.menus {
+  background-color: #f6f6f6;
 }
 
 .restau img {
@@ -737,6 +749,7 @@ header .return-home {
 }
 
 .restau .restau-text .restau__menu .restau__courses h2 {
+  margin: 5px;
   text-transform: uppercase;
   font-family: "Roboto";
   font-weight: 400;
