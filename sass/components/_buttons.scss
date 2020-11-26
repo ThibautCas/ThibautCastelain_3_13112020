@@ -117,6 +117,12 @@
         width: -webkit-max-content;
         width: -moz-max-content;
         width: max-content;
+        @include sm {
+          font-size: 0.9rem;
+        }
+        @include lg {
+          font-size: 1.5rem;
+        }
       }
       p {
         padding: 1%;
@@ -124,10 +130,22 @@
         width: -webkit-max-content;
         width: -moz-max-content;
         width: max-content;
+        @include sm {
+          font-size: 0.7rem;
+        }
+        @include lg {
+          font-size: 1.3rem;
+        }
       }
     }
     .price {
       font-size: 1.2rem;
+      @include sm {
+        font-size: 1rem;
+      }
+      @include lg {
+        font-size: 1.4rem;
+      }
       margin: 2%;
     }
   }
