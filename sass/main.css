@@ -278,6 +278,46 @@
   animation: landing 1s ease-out 3s both;
 }
 
+/* animation check in menus */
+@-webkit-keyframes check-appear {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 25%;
+  }
+}
+
+@keyframes check-appear {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 25%;
+  }
+}
+
+@-webkit-keyframes check-rotate {
+  0% {
+    transfrom: rotate(-270deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes check-rotate {
+  0% {
+    -webkit-transform: rotate(-270deg);
+            transform: rotate(-270deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
 body {
   margin: auto;
   font-family: roboto;
@@ -406,8 +446,8 @@ body {
   margin: 10px;
 }
 
-.container-card a .far,
-.container-card a .fas {
+.container-card a .far.fa-heart,
+.container-card a .fas.fa-heart {
   position: relative;
   font-size: 2rem;
   top: -50px;
@@ -417,11 +457,11 @@ body {
   transition: all 0.5s;
 }
 
-.container-card a .far {
+.container-card a .far.fa-heart {
   right: -72px;
 }
 
-.container-card a .fas {
+.container-card a .fas.fa-heart {
   z-index: 5;
   opacity: 0;
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
@@ -431,11 +471,11 @@ body {
   background-clip: text;
 }
 
-.container-card a .far:hover {
+.container-card a .far.fa-heart:hover {
   opacity: 0;
 }
 
-.container-card a .fas:hover {
+.container-card a .fas.fa-heart:hover {
   opacity: 1;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
@@ -491,7 +531,7 @@ body {
   position: relative;
 }
 
-.steps .fas {
+.steps .fas.fa-heart {
   margin-right: 20px;
 }
 
@@ -501,7 +541,7 @@ body {
           box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.4);
 }
 
-.steps:hover .fas {
+.steps:hover .fas.fa-heart {
   color: #9356DC;
 }
 
@@ -574,7 +614,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  width: 90%;
+  width: 100%;
   margin: 10px auto;
   cursor: pointer;
   -webkit-box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.2);
@@ -584,6 +624,18 @@ body {
 .menu-anim .course:hover {
   -webkit-box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.4);
           box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.4);
+  border-radius: 10px 0 0 10px;
+}
+
+.menu-anim .course:hover + .check {
+  -webkit-animation: check-appear 0.5s ease-in-out forwards;
+  animation: check-appear 0.5s ease-in-out forwards;
+}
+
+.menu-anim .course:hover + .check .fas.fa-check-circle {
+  color: white;
+  -webkit-animation: check-rotate 0.5s ease-in-out forwards;
+  animation: check-rotate 0.5s ease-in-out forwards;
 }
 
 .menu-anim .course .course-text {
@@ -757,8 +809,8 @@ header .return-home {
   }
 }
 
-.restau .restau-text .far,
-.restau .restau-text .fas {
+.restau .restau-text .far.fa-heart,
+.restau .restau-text .fas.fa-heart {
   position: relative;
   font-size: 2rem;
   top: -70px;
@@ -769,37 +821,37 @@ header .return-home {
 }
 
 @media (min-width: 800px) {
-  .restau .restau-text .far,
-  .restau .restau-text .fas {
+  .restau .restau-text .far.fa-heart,
+  .restau .restau-text .fas.fa-heart {
     font-size: 3rem;
   }
 }
 
 @media (min-width: 500px) and (max-width: 800px) {
-  .restau .restau-text .far,
-  .restau .restau-text .fas {
+  .restau .restau-text .far.fa-heart,
+  .restau .restau-text .fas.fa-heart {
     top: -85px;
   }
 }
 
 @media (min-width: 800px) {
-  .restau .restau-text .far,
-  .restau .restau-text .fas {
+  .restau .restau-text .far.fa-heart,
+  .restau .restau-text .fas.fa-heart {
     top: -110px;
   }
 }
 
-.restau .restau-text .far {
+.restau .restau-text .far.fa-heart {
   right: -72px;
 }
 
 @media (min-width: 800px) {
-  .restau .restau-text .far {
+  .restau .restau-text .far.fa-heart {
     right: -88px;
   }
 }
 
-.restau .restau-text .fas {
+.restau .restau-text .fas.fa-heart {
   z-index: 5;
   opacity: 0;
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
@@ -809,11 +861,11 @@ header .return-home {
   background-clip: text;
 }
 
-.restau .restau-text .far:hover {
+.restau .restau-text .far.fa-heart:hover {
   opacity: 0;
 }
 
-.restau .restau-text .fas:hover {
+.restau .restau-text .fas.fa-heart:hover {
   opacity: 1;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
@@ -856,9 +908,49 @@ header .return-home {
   border-bottom: solid #99e2d0;
 }
 
+.check {
+  background-color: #99E2D0;
+  vertical-align: middle;
+  height: auto;
+  margin: 10px 0;
+  width: 0%;
+  padding: 25px 0;
+  text-align: center;
+  border-radius: 0 10px 10px 0;
+}
+
+@media (min-width: 300px) and (max-width: 500px) {
+  .check {
+    padding: 15px 0;
+  }
+}
+
+@media (min-width: 800px) {
+  .check {
+    padding: 30px 0;
+  }
+}
+
+.check .fas.fa-check-circle {
+  color: transparent;
+  font-size: 1.6rem;
+}
+
+@media (min-width: 300px) and (max-width: 500px) {
+  .check .fas.fa-check-circle {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 800px) {
+  .check .fas.fa-check-circle {
+    font-size: 2rem;
+  }
+}
+
 .order {
   text-align: center;
-  top: -40px;
+  top: -20px;
   position: relative;
 }
 

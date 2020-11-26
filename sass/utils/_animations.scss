@@ -158,3 +158,45 @@
                     animation: landing 1s ease-out #{$i}s both;
    }
 }
+
+/* animation check in menus */
+
+@-webkit-keyframes check-appear {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 25%;
+  }
+}
+
+@keyframes check-appear {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 25%;
+  }
+}
+
+
+@-webkit-keyframes check-rotate {
+  0% {
+    transfrom: rotate(-270deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+
+@keyframes check-rotate {
+  0% {
+    transform: rotate(-270deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

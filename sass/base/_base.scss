@@ -98,8 +98,8 @@ body {
       font-size: 1rem;
       margin: 10px;
     }
-    .far,
-    .fas {
+    .far.fa-heart,
+    .fas.fa-heart {
       position: relative;
       font-size: 2rem;
       top: -50px;
@@ -107,10 +107,10 @@ body {
       margin-right: 40px;
       transition: all 0.5s;
     }
-    .far{
+    .far.fa-heart{
       right: -72px;
     }
-    .fas {
+    .fas.fa-heart {
       z-index: 5;
       opacity: 0;
       background: linear-gradient($secondary-color, $primary-color);
@@ -118,14 +118,12 @@ body {
       -webkit-background-clip: text;
               background-clip: text;
     }
-    .far:hover {
+    .far.fa-heart:hover {
       opacity: 0;
     }
-    .fas:hover {
+    .fas.fa-heart:hover {
       opacity: 1;
       transform: scale(1.1);
     }
-
-    
   }
 }

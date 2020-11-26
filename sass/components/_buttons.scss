@@ -42,13 +42,13 @@
     left: -20px;
     position: relative;
   }
-  .fas {
+  .fas.fa-heart {
     margin-right: 20px;
   }
   &:hover {
     background-color: lighten($primary-color, 30);
     box-shadow: $button-shadow-hover;
-    .fas {
+    .fas.fa-heart {
       color: $primary-color;
     }
   }
@@ -101,12 +101,22 @@
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    width: 90%;
+    width: 100%;
     margin: 10px auto;
     cursor: pointer;
     box-shadow: $button-shadow;
     &:hover {
       box-shadow: $button-shadow-hover;
+      border-radius: 10px 0 0 10px;
+      & + .check {
+        -webkit-animation: check-appear 0.5s ease-in-out forwards;
+        animation: check-appear 0.5s ease-in-out forwards;
+        .fas.fa-check-circle {
+          color: white;
+          -webkit-animation: check-rotate 0.5s ease-in-out forwards;
+          animation: check-rotate 0.5s ease-in-out forwards;
+        }
+      }
     }
     .course-text {
       flex-direction: row;
