@@ -29,6 +29,26 @@
   text-align: center;
   font-size: 1rem;
   margin: 0px 20px 20vh 20px;
+  /*.loader-text-1 {
+    position: relative;
+    -webkit-animation: text-loader 1s ease-out 0s forwards;
+    animation: text-loader 1s ease-out 0s forwards;
+  }
+  .loader-text-2 {
+    position: relative;
+    -webkit-animation: text-loader 1s ease-out 1s forwards;
+    animation: text-loader 1s ease-out 1s forwards;
+  }
+  .loader-text-3 {
+    position: relative;
+    -webkit-animation: text-loader 1s ease-out 2s forwards;
+    animation: text-loader 1s ease-out 2s forwards;
+  }
+  .loader-text-4 {
+    position: relative;
+    -webkit-animation: text-loader 1s ease-out 3s forwards;
+    animation: text-loader 1s ease-out 3s forwards;
+  }*/
 }
 
 .spinner-msg img {
@@ -37,11 +57,35 @@
 }
 
 .spinner-msg p {
-  background: -webkit-gradient(linear, left top, right top, from(#9356DC), to(#FF79DA));
-  background: linear-gradient(to right, #9356DC, #FF79DA);
+  background: -webkit-gradient(linear, left top, right top, from(#9356dc), to(#ff79da));
+  background: linear-gradient(to right, #9356dc, #ff79da);
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
+}
+
+.spinner-msg .loader-text-1 {
+  position: relative;
+  -webkit-animation: text-loader 1s ease-out 0.5s both;
+  animation: text-loader 1s ease-out 0.5s both;
+}
+
+.spinner-msg .loader-text-2 {
+  position: relative;
+  -webkit-animation: text-loader 1s ease-out 1s both;
+  animation: text-loader 1s ease-out 1s both;
+}
+
+.spinner-msg .loader-text-3 {
+  position: relative;
+  -webkit-animation: text-loader 1s ease-out 1.5s both;
+  animation: text-loader 1s ease-out 1.5s both;
+}
+
+.spinner-msg .loader-text-4 {
+  position: relative;
+  -webkit-animation: text-loader 1s ease-out 2s both;
+  animation: text-loader 1s ease-out 2s both;
 }
 
 .spinner-bars {
@@ -212,6 +256,24 @@
   }
   100% {
     opacity: 0;
+  }
+}
+
+@-webkit-keyframes text-loader {
+  0% {
+    left: -800px;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes text-loader {
+  0% {
+    left: -800px;
+  }
+  100% {
+    left: 0;
   }
 }
 
