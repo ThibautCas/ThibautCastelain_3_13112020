@@ -573,7 +573,7 @@ body {
   position: relative;
 }
 
-.steps .fas.fa-heart {
+.steps .fas {
   margin-right: 20px;
 }
 
@@ -583,7 +583,7 @@ body {
           box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.4);
 }
 
-.steps:hover .fas.fa-heart {
+.steps:hover .fas {
   color: #9356DC;
 }
 
@@ -639,6 +639,23 @@ body {
   display: flex;
 }
 
+.menu-anim:hover .course {
+  -webkit-box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.4);
+  border-radius: 10px 0 0 10px;
+}
+
+.menu-anim:hover .check {
+  -webkit-animation: check-appear 0.5s ease-in-out forwards;
+  animation: check-appear 0.5s ease-in-out forwards;
+}
+
+.menu-anim:hover .check .fas.fa-check-circle {
+  color: white;
+  -webkit-animation: check-rotate 0.5s ease-in-out forwards;
+  animation: check-rotate 0.5s ease-in-out forwards;
+}
+
 .menu-anim .course {
   background-color: white;
   border-radius: 10px;
@@ -661,23 +678,19 @@ body {
   cursor: pointer;
   -webkit-box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.2);
-}
-
-.menu-anim .course:hover {
-  -webkit-box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.4);
-          box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.4);
-  border-radius: 10px 0 0 10px;
-}
-
-.menu-anim .course:hover + .check {
-  -webkit-animation: check-appear 0.5s ease-in-out forwards;
-  animation: check-appear 0.5s ease-in-out forwards;
-}
-
-.menu-anim .course:hover + .check .fas.fa-check-circle {
-  color: white;
-  -webkit-animation: check-rotate 0.5s ease-in-out forwards;
-  animation: check-rotate 0.5s ease-in-out forwards;
+  /*&:hover {
+      box-shadow: $button-shadow-hover;
+      border-radius: 10px 0 0 10px;
+      & + .check {
+        -webkit-animation: check-appear 0.5s ease-in-out forwards;
+        animation: check-appear 0.5s ease-in-out forwards;
+        .fas.fa-check-circle {
+          color: white;
+          -webkit-animation: check-rotate 0.5s ease-in-out forwards;
+          animation: check-rotate 0.5s ease-in-out forwards;
+        }
+      }
+    }*/
 }
 
 .menu-anim .course .course-text {
