@@ -5,7 +5,7 @@ body {
 }
 .page-content {
   -webkit-animation: affich 4s forwards;
-          animation: affich 4s forwards;
+  animation: affich 4s forwards;
   width: 100%;
 }
 
@@ -60,8 +60,7 @@ body {
 /* Results */
 
 .results {
-    margin: $margin-container;
-
+  margin: $margin-container;
 }
 .container-card {
   display: flex;
@@ -107,7 +106,7 @@ body {
       margin-right: 40px;
       transition: all 0.5s;
     }
-    .far.fa-heart{
+    .far.fa-heart {
       right: -72px;
     }
     .fas.fa-heart {
@@ -116,7 +115,7 @@ body {
       background: linear-gradient($secondary-color, $primary-color);
       color: transparent;
       -webkit-background-clip: text;
-              background-clip: text;
+      background-clip: text;
     }
     .far.fa-heart:hover {
       opacity: 0;

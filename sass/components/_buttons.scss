@@ -94,20 +94,20 @@
   display: flex;
   &:hover {
     .course {
-    box-shadow: $button-shadow-hover;
-    border-radius: 10px 0 0 10px;
-    .course-text{
-      h3 {
-        @media (max-width: 350px) {
-          font-size: 0.7rem;
+      box-shadow: $button-shadow-hover;
+      border-radius: 10px 0 0 10px;
+      .course-text {
+        h3 {
+          @media (max-width: 350px) {
+            font-size: 0.7rem;
+          }
+        }
+        p {
+          @media (max-width: 350px) {
+            font-size: 0.6rem;
+          }
         }
       }
-      p {
-        @media (max-width: 350px) {
-          font-size: 0.6rem;
-        }
-      }
-    }
     }
     .check {
       -webkit-animation: check-appear 0.5s ease-in-out forwards;

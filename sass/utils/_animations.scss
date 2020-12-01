@@ -31,8 +31,8 @@
   @for $i from 1 through 4 {
     .loader-text-#{$i} {
       position: relative;
-      -webkit-animation: text-loader 1s ease-out 0.5s*$i both;
-      animation: text-loader 1s ease-out 0.5s*$i both;
+      -webkit-animation: text-loader 1s ease-out 0.5s * $i both;
+      animation: text-loader 1s ease-out 0.5s * $i both;
     }
   }
 }
