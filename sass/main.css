@@ -645,6 +645,18 @@ body {
   border-radius: 10px 0 0 10px;
 }
 
+@media (max-width: 350px) {
+  .menu-anim:hover .course .course-text h3 {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .menu-anim:hover .course .course-text p {
+    font-size: 0.6rem;
+  }
+}
+
 .menu-anim:hover .check {
   -webkit-animation: check-appear 0.5s ease-in-out forwards;
   animation: check-appear 0.5s ease-in-out forwards;
@@ -678,19 +690,6 @@ body {
   cursor: pointer;
   -webkit-box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.2);
-  /*&:hover {
-      box-shadow: $button-shadow-hover;
-      border-radius: 10px 0 0 10px;
-      & + .check {
-        -webkit-animation: check-appear 0.5s ease-in-out forwards;
-        animation: check-appear 0.5s ease-in-out forwards;
-        .fas.fa-check-circle {
-          color: white;
-          -webkit-animation: check-rotate 0.5s ease-in-out forwards;
-          animation: check-rotate 0.5s ease-in-out forwards;
-        }
-      }
-    }*/
 }
 
 .menu-anim .course .course-text {

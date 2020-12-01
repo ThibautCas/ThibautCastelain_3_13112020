@@ -96,6 +96,18 @@
     .course {
     box-shadow: $button-shadow-hover;
     border-radius: 10px 0 0 10px;
+    .course-text{
+      h3 {
+        @media (max-width: 350px) {
+          font-size: 0.7rem;
+        }
+      }
+      p {
+        @media (max-width: 350px) {
+          font-size: 0.6rem;
+        }
+      }
+    }
     }
     .check {
       -webkit-animation: check-appear 0.5s ease-in-out forwards;
@@ -119,19 +131,6 @@
     margin: 10px auto;
     cursor: pointer;
     box-shadow: $button-shadow;
-    /*&:hover {
-      box-shadow: $button-shadow-hover;
-      border-radius: 10px 0 0 10px;
-      & + .check {
-        -webkit-animation: check-appear 0.5s ease-in-out forwards;
-        animation: check-appear 0.5s ease-in-out forwards;
-        .fas.fa-check-circle {
-          color: white;
-          -webkit-animation: check-rotate 0.5s ease-in-out forwards;
-          animation: check-rotate 0.5s ease-in-out forwards;
-        }
-      }
-    }*/
     .course-text {
       flex-direction: row;
       margin: 2%;
